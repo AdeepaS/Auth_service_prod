@@ -1,0 +1,403 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[94,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[41,26] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserManagerConfig.java:[18,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[16,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[17,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[121,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[125,21] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[125,49] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[196,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[210,21] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[237,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[289,29] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[308,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[309,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[311,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[316,92] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[340,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[365,56] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[376,21] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[403,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[408,83] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[413,31] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[423,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[424,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[429,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[441,39] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[442,37] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[490,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[505,39] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[515,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[516,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[522,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[537,35] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[616,98] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[617,27] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[682,41] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[704,29] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[710,29] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[737,23] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[746,27] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[757,44] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[759,115] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[763,48] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[765,85] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[829,67] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[848,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[854,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[892,27] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[900,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[904,44] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[952,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[953,57] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[980,71] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[997,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1002,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1020,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1024,44] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1050,99] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1074,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1078,44] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1096,29] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1106,94] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1117,94] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1126,95] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1153,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1189,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1200,30] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1204,77] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1208,34] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1214,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1219,91] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1224,39] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1234,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1235,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1240,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1256,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1257,41] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1294,39] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1306,31] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1316,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1317,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1323,17] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1340,31] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1411,35] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1433,39] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1443,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1444,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1450,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1465,35] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1486,61] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1488,44] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1536,53] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1554,53] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1578,25] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1578,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1584,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1585,42] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1586,45] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1589,43] cannot find symbol
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1616,33] cannot find symbol
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project auth.service: Compilation failure: Compilation failure: 
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[94,17] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[41,26] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserManagerConfig.java:[18,17] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[16,23] cannot find symbol
+[ERROR]   symbol:   method setUserName(@jakarta.validation.constraints.NotEmpty(message="User name must not be empty") java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[17,23] cannot find symbol
+[ERROR]   symbol:   method setEmailId(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[121,43] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[125,21] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[125,49] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[196,43] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[210,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[237,43] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[289,29] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[308,23] cannot find symbol
+[ERROR]   symbol:   method setPassword(java.lang.String)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[309,23] cannot find symbol
+[ERROR]   symbol:   method setEmailId(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[311,23] cannot find symbol
+[ERROR]   symbol:   method setStatus(int)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[316,92] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[340,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[365,56] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[376,21] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[403,17] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[408,83] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[413,31] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[423,17] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[424,17] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[429,17] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[441,39] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[442,37] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[490,43] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[505,39] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[515,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[516,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[522,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[537,35] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[616,98] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[617,27] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[682,41] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[704,29] cannot find symbol
+[ERROR]   symbol:   method existsByEmailIdAndStatus(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String,int)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[710,29] cannot find symbol
+[ERROR]   symbol:   method existsByMobileNumberAndStatus(java.lang.String,int)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[737,23] cannot find symbol
+[ERROR]   symbol:   method setStatus(int)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[746,27] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[757,44] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[759,115] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[763,48] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[765,85] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[829,67] cannot find symbol
+[ERROR]   symbol:   method findByEmailIdAndOtp(java.lang.String,java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[848,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(int)
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[854,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[892,27] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[900,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[904,44] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[952,43] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[953,57] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[980,71] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[997,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(int)
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1002,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1020,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1024,44] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1050,99] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1074,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1078,44] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1096,29] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1106,94] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1117,94] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1126,95] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1153,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1189,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(int)
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1200,30] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1204,77] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1208,34] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1214,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1219,91] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1224,39] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1234,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1235,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1240,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1256,43] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1257,41] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1294,39] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1306,31] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1316,17] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1317,17] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1323,17] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1340,31] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1411,35] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1433,39] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1443,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1444,25] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1450,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1465,35] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1486,61] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1488,44] cannot find symbol
+[ERROR]   symbol:   method findByEmailId(java.lang.String)
+[ERROR]   location: variable userInfoRepo of type com.auth.service.repository.UserRepo
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1536,53] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1554,53] incompatible types: java.lang.Long cannot be converted to java.util.UUID
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1578,25] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1578,43] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1584,43] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1585,42] cannot find symbol
+[ERROR]   symbol:   method getEmailId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1586,45] cannot find symbol
+[ERROR]   symbol:   method getUserName()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1589,43] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[1616,33] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

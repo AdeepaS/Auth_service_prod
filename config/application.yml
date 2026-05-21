@@ -1,0 +1,5 @@
+cors:
+  allowed-origins:
+    # Production - BFF calls Auth from localhost internally
+    - "http://localhost:8089"
+    - "http://127.0.0.1:8089"

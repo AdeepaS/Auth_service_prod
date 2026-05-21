@@ -1,0 +1,43 @@
+package com.auth.service.exception;
+
+public enum ErrorCode {
+    LDAP_CONNECTION_FAILED(1001),
+    LDAP_AUTHENTICATION_FAILED(1002),
+    LDAP_INVALID_CREDENTIALS(1003),
+
+//    Email
+    INTERNAL_SERVER_ERROR(5000),
+    EMAIL_SENDING_FAILED(5001),
+    EMAIL_INVALID_ADDRESS(5002),
+    EMAIL_SERVER_ERROR(5003),
+    EMAIL_CONTENT_ERROR(5004),
+
+    ACCOUNT_BLOCKED(4003),
+    ACCOUNT_INACTIVE(4005),
+    INVALID_CREDENTIALS(4001),
+    USER_NOT_FOUND(4004),
+
+    PASSWORD_REQUIRED(4007),
+    PASSWORD_NOT_SET(4008),
+    ACCOUNT_LOCKED(4010),
+
+    OTP_EXPIRED(4011),
+    OTP_ATTEMPTS_EXCEEDED(4012),
+    INVALID_REQUEST(4002),
+    INVALID_OTP(4013),
+
+    EMAIL_ALREADY_EXISTS(4014),
+    MOBILE_ALREADY_EXISTS(4015),
+    LDAP_RESTRICTION(4016);
+
+
+    private final int code;
+
+    ErrorCode(int code) {
+        this.code = code;
+    }
+
+    public int getCode() {
+        return code;
+    }
+}

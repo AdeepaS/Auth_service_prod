@@ -1,0 +1,656 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com:auth.service >--------------------------
+[INFO] Building auth.service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ auth.service ---
+[INFO] Deleting /home/ravindu/Desktop/Browns/router_backend_auth/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ auth.service ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 7 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth.service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 93 source files with javac [debug parameters release 21] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/util/KeyGenerator.java: Some input files use or override a deprecated API.
+[INFO] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/util/KeyGenerator.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java: /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java uses unchecked or unsafe operations.
+[INFO] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[492,51] method getAccessToken(java.lang.String,jakarta.servlet.http.HttpServletRequest) is already defined in class com.auth.service.controller.AuthController
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[83,41] cannot find symbol
+  symbol:   method isRevoked()
+  location: variable token of type com.auth.service.entity.RefreshTokenEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[96,22] incompatible types: invalid constructor reference
+    constructor UserConfig in class com.auth.service.config.user.UserConfig cannot be applied to given types
+      required: no arguments
+      found:    com.auth.service.entity.UserEntity
+      reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[100,34] constructor JwtAccessTokenFilter in class com.auth.service.config.jwtConfig.JwtAccessTokenFilter cannot be applied to given types;
+  required: no arguments
+  found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.logger.LoggerAdapter,com.auth.service.repository.UserSessionRepository
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[183,34] constructor JwtRefreshTokenFilter in class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter cannot be applied to given types;
+  required: no arguments
+  found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.repository.RefreshTokenRepo
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[200,34] constructor JwtAccessTokenFilter in class com.auth.service.config.jwtConfig.JwtAccessTokenFilter cannot be applied to given types;
+  required: no arguments
+  found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.logger.LoggerAdapter,com.auth.service.repository.UserSessionRepository
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[41,13] cannot find symbol
+  symbol:   variable log
+  location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[42,13] cannot find symbol
+  symbol:   variable log
+  location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[64,71] cannot find symbol
+  symbol:   method isRevoked()
+  location: variable refreshTokenEntity of type com.auth.service.entity.RefreshTokenEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[68,78] bad operand types for binary operator '&&'
+  first type:  boolean
+  second type: java.lang.Object
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[82,13] cannot find symbol
+  symbol:   variable log
+  location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[85,13] cannot find symbol
+  symbol:   variable log
+  location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[30,33] cannot find symbol
+  symbol:   method getRole()
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[39,26] cannot find symbol
+  symbol:   method getOtp()
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[44,26] cannot find symbol
+  symbol:   method getEmail()
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[47,55] cannot find symbol
+  symbol:   method getMobileNumber()
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserManagerConfig.java:[19,22] incompatible types: invalid constructor reference
+    constructor UserConfig in class com.auth.service.config.user.UserConfig cannot be applied to given types
+      required: no arguments
+      found:    com.auth.service.entity.UserEntity
+      reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AdminController.java:[27,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[120,25] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable authResponse of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[172,46] cannot find symbol
+  symbol:   method getUsernameOrEmail()
+  location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[173,34] cannot find symbol
+  symbol:   method getOtp()
+  location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[217,45] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable authResponse of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[295,46] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[313,37] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[314,25] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[384,23] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[394,52] cannot find symbol
+  symbol:   method getMessage()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[396,52] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[397,65] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[398,39] cannot find symbol
+  symbol:   method getMessage()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[474,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[488,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[535,84] cannot find symbol
+  symbol:   method getUsernameOrEmail()
+  location: variable forgetPasswordDto of type com.auth.service.dto.ForgetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[536,48] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[546,51] cannot find symbol
+  symbol:   method getUsernameOrEmail()
+  location: variable forgetPasswordDto of type com.auth.service.dto.ForgetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[560,44] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[565,46] cannot find symbol
+  symbol:   method getUsernameOrEmail()
+  location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[566,34] cannot find symbol
+  symbol:   method getOtp()
+  location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[588,63] constructor OtpVerificationDto in record com.auth.service.dto.OtpVerificationDto cannot be applied to given types;
+  required: java.lang.String,java.lang.String,java.lang.String
+  found:    java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,44] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,131] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,151] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,175] cannot find symbol
+  symbol:   method getMessage()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[594,50] cannot find symbol
+  symbol:   method getUsernameOrEmail()
+  location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[595,38] cannot find symbol
+  symbol:   method getOtp()
+  location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[596,46] cannot find symbol
+  symbol:   method getNewPassword()
+  location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[597,50] cannot find symbol
+  symbol:   method getConfirmPassword()
+  location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[640,44] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[27,25] cannot find symbol
+  symbol:   method setAttemptCount(int)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[28,25] cannot find symbol
+  symbol:   method setBlocked(boolean)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[29,25] cannot find symbol
+  symbol:   method setBlockExpireTime(<nulltype>)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[42,25] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[43,25] cannot find symbol
+  symbol:   method setAttemptCount(int)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[44,25] cannot find symbol
+  symbol:   method setLastAttemptTime(java.time.LocalDateTime)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[50,25] cannot find symbol
+  symbol:   method getLastAttemptTime()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[51,41] cannot find symbol
+  symbol:   method getLastAttemptTime()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[53,25] cannot find symbol
+  symbol:   method setAttemptCount(int)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[56,54] cannot find symbol
+  symbol:   method getAttemptCount()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[59,21] cannot find symbol
+  symbol:   method setLastAttemptTime(java.time.LocalDateTime)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[62,25] cannot find symbol
+  symbol:   method getAttemptCount()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[63,25] cannot find symbol
+  symbol:   method setBlocked(boolean)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[64,25] cannot find symbol
+  symbol:   method setBlockExpireTime(java.time.LocalDateTime)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[81,29] cannot find symbol
+  symbol:   method isBlocked()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[82,61] cannot find symbol
+  symbol:   method getBlockExpireTime()
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[83,33] cannot find symbol
+  symbol:   method setBlocked(boolean)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[84,33] cannot find symbol
+  symbol:   method setAttemptCount(int)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[85,33] cannot find symbol
+  symbol:   method setBlockExpireTime(<nulltype>)
+  location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[49,57] cannot find symbol
+  symbol:   method getId()
+  location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[51,66] cannot find symbol
+  symbol:   method getId()
+  location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[52,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[59,49] cannot find symbol
+  symbol:   method getData()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[60,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[76,71] cannot find symbol
+  symbol:   method getData()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[77,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[84,60] cannot find symbol
+  symbol:   method getData()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[85,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[90,69] cannot find symbol
+  symbol:   method getId()
+  location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[91,40] cannot find symbol
+  symbol:   method getId()
+  location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[93,57] cannot find symbol
+  symbol:   method getMessage()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[94,46] cannot find symbol
+  symbol:   method getStatusCode()
+  location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[102,44] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/exception/GlobalExceptionHandler.java:[23,22] cannot find symbol
+  symbol: method setErrorCode(java.lang.String)
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/exception/GlobalExceptionHandler.java:[35,22] cannot find symbol
+  symbol: method setErrorCode(java.lang.String)
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[19,23] cannot find symbol
+  symbol:   method setName(@jakarta.validation.constraints.NotEmpty(message="User name must not be empty") java.lang.String)
+  location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[20,23] cannot find symbol
+  symbol:   method setEmail(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+  location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[21,23] cannot find symbol
+  symbol:   method setMobileNumber(java.lang.String)
+  location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[22,23] cannot find symbol
+  symbol:   method setRole(java.lang.String)
+  location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[129,21] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[129,52] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[214,21] cannot find symbol
+  symbol:   method getPasswordHash()
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[238,17] cannot find symbol
+  symbol:   method setOtp(java.lang.String)
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[239,17] cannot find symbol
+  symbol:   method setOtpExpiry(java.time.LocalDateTime)
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[241,43] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[312,23] cannot find symbol
+  symbol:   method setPasswordHash(java.lang.String)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[313,23] cannot find symbol
+  symbol:   method setEmail(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[314,23] cannot find symbol
+  symbol:   method setRole(java.lang.String)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[315,23] cannot find symbol
+  symbol:   method setIsActive(boolean)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[316,23] cannot find symbol
+  symbol:   method setOtp(<nulltype>)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[317,23] cannot find symbol
+  symbol:   method setOtpExpiry(<nulltype>)
+  location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[320,92] cannot find symbol
+  symbol:   method getEmail()
+  location: variable savedUser of type com.auth.service.entity.UserEntity
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.432 s
+[INFO] Finished at: 2026-05-06T16:32:19+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project auth.service: Compilation failure: Compilation failure: 
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[492,51] method getAccessToken(java.lang.String,jakarta.servlet.http.HttpServletRequest) is already defined in class com.auth.service.controller.AuthController
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[83,41] cannot find symbol
+[ERROR]   symbol:   method isRevoked()
+[ERROR]   location: variable token of type com.auth.service.entity.RefreshTokenEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtTokenUtils.java:[96,22] incompatible types: invalid constructor reference
+[ERROR]     constructor UserConfig in class com.auth.service.config.user.UserConfig cannot be applied to given types
+[ERROR]       required: no arguments
+[ERROR]       found:    com.auth.service.entity.UserEntity
+[ERROR]       reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[100,34] constructor JwtAccessTokenFilter in class com.auth.service.config.jwtConfig.JwtAccessTokenFilter cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.logger.LoggerAdapter,com.auth.service.repository.UserSessionRepository
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[183,34] constructor JwtRefreshTokenFilter in class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.repository.RefreshTokenRepo
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/SecurityConfig.java:[200,34] constructor JwtAccessTokenFilter in class com.auth.service.config.jwtConfig.JwtAccessTokenFilter cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    com.auth.service.config.RSAKeyRecord,com.auth.service.config.jwtConfig.JwtTokenUtils,com.auth.service.logger.LoggerAdapter,com.auth.service.repository.UserSessionRepository
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[41,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[42,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[64,71] cannot find symbol
+[ERROR]   symbol:   method isRevoked()
+[ERROR]   location: variable refreshTokenEntity of type com.auth.service.entity.RefreshTokenEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[68,78] bad operand types for binary operator '&&'
+[ERROR]   first type:  boolean
+[ERROR]   second type: java.lang.Object
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[82,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/jwtConfig/JwtRefreshTokenFilter.java:[85,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.auth.service.config.jwtConfig.JwtRefreshTokenFilter
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[30,33] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[39,26] cannot find symbol
+[ERROR]   symbol:   method getOtp()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[44,26] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserConfig.java:[47,55] cannot find symbol
+[ERROR]   symbol:   method getMobileNumber()
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/config/user/UserManagerConfig.java:[19,22] incompatible types: invalid constructor reference
+[ERROR]     constructor UserConfig in class com.auth.service.config.user.UserConfig cannot be applied to given types
+[ERROR]       required: no arguments
+[ERROR]       found:    com.auth.service.entity.UserEntity
+[ERROR]       reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AdminController.java:[27,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[120,25] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable authResponse of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[172,46] cannot find symbol
+[ERROR]   symbol:   method getUsernameOrEmail()
+[ERROR]   location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[173,34] cannot find symbol
+[ERROR]   symbol:   method getOtp()
+[ERROR]   location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[217,45] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable authResponse of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[295,46] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[313,37] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[314,25] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[384,23] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[394,52] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[396,52] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[397,65] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[398,39] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[474,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[488,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[535,84] cannot find symbol
+[ERROR]   symbol:   method getUsernameOrEmail()
+[ERROR]   location: variable forgetPasswordDto of type com.auth.service.dto.ForgetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[536,48] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[546,51] cannot find symbol
+[ERROR]   symbol:   method getUsernameOrEmail()
+[ERROR]   location: variable forgetPasswordDto of type com.auth.service.dto.ForgetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[560,44] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[565,46] cannot find symbol
+[ERROR]   symbol:   method getUsernameOrEmail()
+[ERROR]   location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[566,34] cannot find symbol
+[ERROR]   symbol:   method getOtp()
+[ERROR]   location: variable verifyOtpDto of type com.auth.service.dto.VerifyOtpDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[588,63] constructor OtpVerificationDto in record com.auth.service.dto.OtpVerificationDto cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.lang.String,java.lang.String
+[ERROR]   found:    java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,44] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,131] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,151] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[589,175] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.Object>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[594,50] cannot find symbol
+[ERROR]   symbol:   method getUsernameOrEmail()
+[ERROR]   location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[595,38] cannot find symbol
+[ERROR]   symbol:   method getOtp()
+[ERROR]   location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[596,46] cannot find symbol
+[ERROR]   symbol:   method getNewPassword()
+[ERROR]   location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[597,50] cannot find symbol
+[ERROR]   symbol:   method getConfirmPassword()
+[ERROR]   location: variable resetPasswordDto of type com.auth.service.dto.ResetPasswordDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/AuthController.java:[640,44] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[27,25] cannot find symbol
+[ERROR]   symbol:   method setAttemptCount(int)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[28,25] cannot find symbol
+[ERROR]   symbol:   method setBlocked(boolean)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[29,25] cannot find symbol
+[ERROR]   symbol:   method setBlockExpireTime(<nulltype>)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[42,25] cannot find symbol
+[ERROR]   symbol:   method setUsername(java.lang.String)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[43,25] cannot find symbol
+[ERROR]   symbol:   method setAttemptCount(int)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[44,25] cannot find symbol
+[ERROR]   symbol:   method setLastAttemptTime(java.time.LocalDateTime)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[50,25] cannot find symbol
+[ERROR]   symbol:   method getLastAttemptTime()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[51,41] cannot find symbol
+[ERROR]   symbol:   method getLastAttemptTime()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[53,25] cannot find symbol
+[ERROR]   symbol:   method setAttemptCount(int)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[56,54] cannot find symbol
+[ERROR]   symbol:   method getAttemptCount()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[59,21] cannot find symbol
+[ERROR]   symbol:   method setLastAttemptTime(java.time.LocalDateTime)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[62,25] cannot find symbol
+[ERROR]   symbol:   method getAttemptCount()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[63,25] cannot find symbol
+[ERROR]   symbol:   method setBlocked(boolean)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[64,25] cannot find symbol
+[ERROR]   symbol:   method setBlockExpireTime(java.time.LocalDateTime)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[81,29] cannot find symbol
+[ERROR]   symbol:   method isBlocked()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[82,61] cannot find symbol
+[ERROR]   symbol:   method getBlockExpireTime()
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[83,33] cannot find symbol
+[ERROR]   symbol:   method setBlocked(boolean)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[84,33] cannot find symbol
+[ERROR]   symbol:   method setAttemptCount(int)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/LoginAttemptServiceImpl.java:[85,33] cannot find symbol
+[ERROR]   symbol:   method setBlockExpireTime(<nulltype>)
+[ERROR]   location: variable loginAttempt of type com.auth.service.entity.LoginAttempt
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[49,57] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[51,66] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[52,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[59,49] cannot find symbol
+[ERROR]   symbol:   method getData()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[60,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[76,71] cannot find symbol
+[ERROR]   symbol:   method getData()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[77,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<com.auth.service.dto.UserResponseDTO>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[84,60] cannot find symbol
+[ERROR]   symbol:   method getData()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[85,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[90,69] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[91,40] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable userDTO of type com.auth.service.dto.UserDto
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[93,57] cannot find symbol
+[ERROR]   symbol:   method getMessage()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[94,46] cannot find symbol
+[ERROR]   symbol:   method getStatusCode()
+[ERROR]   location: variable response of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/controller/UserController.java:[102,44] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable result of type com.auth.service.dto.ApiResponseDto<java.lang.String>
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/exception/GlobalExceptionHandler.java:[23,22] cannot find symbol
+[ERROR]   symbol: method setErrorCode(java.lang.String)
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/exception/GlobalExceptionHandler.java:[35,22] cannot find symbol
+[ERROR]   symbol: method setErrorCode(java.lang.String)
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[19,23] cannot find symbol
+[ERROR]   symbol:   method setName(@jakarta.validation.constraints.NotEmpty(message="User name must not be empty") java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[20,23] cannot find symbol
+[ERROR]   symbol:   method setEmail(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[21,23] cannot find symbol
+[ERROR]   symbol:   method setMobileNumber(java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/mapper/UserInfoMapper.java:[22,23] cannot find symbol
+[ERROR]   symbol:   method setRole(java.lang.String)
+[ERROR]   location: variable userInfoEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[129,21] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[129,52] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[214,21] cannot find symbol
+[ERROR]   symbol:   method getPasswordHash()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[238,17] cannot find symbol
+[ERROR]   symbol:   method setOtp(java.lang.String)
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[239,17] cannot find symbol
+[ERROR]   symbol:   method setOtpExpiry(java.time.LocalDateTime)
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[241,43] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[312,23] cannot find symbol
+[ERROR]   symbol:   method setPasswordHash(java.lang.String)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[313,23] cannot find symbol
+[ERROR]   symbol:   method setEmail(@jakarta.validation.constraints.NotEmpty(message="User email must not be empty"),@jakarta.validation.constraints.Email(message="Invalid email format") java.lang.String)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[314,23] cannot find symbol
+[ERROR]   symbol:   method setRole(java.lang.String)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[315,23] cannot find symbol
+[ERROR]   symbol:   method setIsActive(boolean)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[316,23] cannot find symbol
+[ERROR]   symbol:   method setOtp(<nulltype>)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[317,23] cannot find symbol
+[ERROR]   symbol:   method setOtpExpiry(<nulltype>)
+[ERROR]   location: variable userEntity of type com.auth.service.entity.UserEntity
+[ERROR] /home/ravindu/Desktop/Browns/router_backend_auth/src/main/java/com/auth/service/service/impl/AuthServiceImpl.java:[320,92] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable savedUser of type com.auth.service.entity.UserEntity
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
