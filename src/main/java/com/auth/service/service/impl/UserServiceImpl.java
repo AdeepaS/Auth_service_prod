@@ -292,7 +292,7 @@ public class UserServiceImpl implements UserService {
         try {
             List<UserEntity> pendingUsers = userRepository.findByAccountStatus(com.auth.service.entity.AccountStatus.UNVERIFIED);
             List<UserResponseDTO> responseDTOs = pendingUsers.stream()
-                    .filter(user -> user.getRole() == com.auth.service.entity.Role.ENGINEER || user.getRole() == com.auth.service.entity.Role.STAFF)
+                    .filter(user -> user.getRole() == com.auth.service.entity.Role.ENGINEER || user.getRole() == com.auth.service.entity.Role.STAFF || user.getRole() == com.auth.service.entity.Role.TECHNICIAN)
                     .map(this::mapUserToResponseDTO)
                     .collect(Collectors.toList());
 
