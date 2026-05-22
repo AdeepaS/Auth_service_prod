@@ -17,6 +17,8 @@ public interface UserService {
 
     ApiResponseDto<List<UserResponseDTO>> getAllUsers();
 
+    ApiResponseDto<List<UserResponseDTO>> getPendingTechnicians();
+
     ApiResponseDto<String> deleteUser(UUID id);
 
     ApiResponseDto<String> changePassword(UUID userId, String oldPassword, String newPassword);

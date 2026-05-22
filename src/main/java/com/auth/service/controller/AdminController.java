@@ -22,6 +22,13 @@ public class AdminController {
 
     // @PreAuthorize("hasRole('ADMIN')") // Enable if Role-Based Access Control is required
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'ADMIN', 'MANAGER')")
+    @GetMapping("/users/pending")
+    public ResponseEntity<ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>>> getPendingTechnicians() {
+        ApiResponseDto<java.util.List<com.auth.service.dto.UserResponseDTO>> response = userService.getPendingTechnicians();
+        return ResponseEntity.status(response.getStatusCode()).body(response);
+    }
+
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'ADMIN', 'MANAGER')")
     @PutMapping("/users/{id}/approve")
     public ResponseEntity<ApiResponseDto<String>> approveUser(@PathVariable UUID id) {
         ApiResponseDto<String> response = userService.approveUser(id);

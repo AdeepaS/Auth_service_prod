@@ -287,6 +287,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public ApiResponseDto<List<UserResponseDTO>> getPendingTechnicians() {
+        logger.info("Starting to fetch pending technicians");
+        try {
+            List<UserEntity> pendingUsers = userRepository.findByAccountStatus(com.auth.service.entity.AccountStatus.UNVERIFIED);
+            List<UserResponseDTO> responseDTOs = pendingUsers.stream()
+                    .filter(user -> user.getRole() == com.auth.service.entity.Role.ENGINEER || user.getRole() == com.auth.service.entity.Role.STAFF)
+                    .map(this::mapUserToResponseDTO)
+                    .collect(Collectors.toList());
+
+            logger.info("Successfully fetched pending technicians. Count: {}", responseDTOs.size());
+            return new ApiResponseDto<>(true, HttpStatus.OK.value(),
+                    "Pending technicians retrieved successfully", responseDTOs);
+        } catch (Exception e) {
+            logger.error("Error while fetching pending technicians: {} ",e.getMessage());
+            return new ApiResponseDto<>(false, HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                    "An error occurred while retrieving pending technicians: " + e.getMessage(), null);
+        }
+    }
+
+    @Override
     @Transactional
     public ApiResponseDto<String> deleteUser(UUID id) {
         logger.info("Deleting user with ID: {}", id);
