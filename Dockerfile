@@ -14,6 +14,7 @@ COPY --from=build /app/target/*.jar app.jar
 
 # Copy external configuration
 COPY config ./config
+COPY src/main/resources/certs ./config/certs
 
 # Expose the default Auth Service port
 EXPOSE 8080
