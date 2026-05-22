@@ -164,11 +164,16 @@ public class AuthServiceImpl implements AuthService {
             logger.error("Authentication error: {}", e.getMessage());
             return new ApiResponseDto<>(false, e.getErrorCode().getCode(),
                     e.getMessage(), null);
+        } catch (org.springframework.security.core.userdetails.UsernameNotFoundException e) {
+            logger.error("User not found: {}", e.getMessage());
+            loginAttemptService.loginFailed(username);
+            return new ApiResponseDto<>(false, ErrorCode.INVALID_CREDENTIALS.getCode(),
+                    "Invalid email or password", null);
         } catch (BadCredentialsException e) {
             logger.error("Bad credentials: {}", e.getMessage());
             loginAttemptService.loginFailed(username);
             return new ApiResponseDto<>(false, ErrorCode.INVALID_CREDENTIALS.getCode(),
-                    "Invalid username or password", null);
+                    "Invalid email or password", null);
         } catch (LdapException e) {
             logger.error("LDAP error: {}", e.getMessage());
             int errorCode = e.getErrorCode().getCode();
@@ -249,13 +254,13 @@ public class AuthServiceImpl implements AuthService {
             logger.error("Bad credentials: {}", e.getMessage());
             loginAttemptService.loginFailed(username);
             return new ApiResponseDto<>(false, ErrorCode.INVALID_CREDENTIALS.getCode(),
-                    e.getMessage(), null, new ApiResponseDto.ErrorDetails2(ErrorCode.INVALID_CREDENTIALS.getCode()));
+                    "Invalid email or password", null, new ApiResponseDto.ErrorDetails2(ErrorCode.INVALID_CREDENTIALS.getCode()));
 
         } catch (UsernameNotFoundException e) {
             logger.error("User not found: {}", e.getMessage());
             loginAttemptService.loginFailed(username);
-            return new ApiResponseDto<>(false, ErrorCode.USER_NOT_FOUND.getCode(),
-                    e.getMessage(), null, new ApiResponseDto.ErrorDetails2(ErrorCode.USER_NOT_FOUND.getCode()));
+            return new ApiResponseDto<>(false, ErrorCode.INVALID_CREDENTIALS.getCode(),
+                    "Invalid email or password", null, new ApiResponseDto.ErrorDetails2(ErrorCode.INVALID_CREDENTIALS.getCode()));
 
         } catch (DisabledException e) {
             logger.error("Account inactive: {}", e.getMessage());
