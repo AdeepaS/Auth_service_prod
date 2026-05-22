@@ -12,18 +12,23 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import java.util.regex.Pattern;
 import org.apache.commons.validator.routines.EmailValidator;
+import org.springframework.beans.factory.annotation.Value;
 
 @Service
 public class EmailServiceImpl implements EmailService {
 
-    private final JavaMailSender javaMailSender;
+    @Value("${sendgrid.api.key}")
+    private String sendGridApiKey;
+
+    @Value("${sendgrid.from.email}")
+    private String fromEmailAddress;
+
     private final UserRepo userRepo;
 
     private static final Logger logger = LoggerFactory.getLogger(EmailServiceImpl.class);
 
     @Autowired
-    public EmailServiceImpl(JavaMailSender javaMailSender, UserRepo userRepo) {
-        this.javaMailSender = javaMailSender;
+    public EmailServiceImpl(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
 
@@ -35,15 +40,19 @@ public class EmailServiceImpl implements EmailService {
             throw EmailException.invalidAddress("Invalid email address: " + email);
         }
         try {
-            MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
+            com.sendgrid.helpers.mail.objects.Email from = new com.sendgrid.helpers.mail.objects.Email(fromEmailAddress);
+            com.sendgrid.helpers.mail.objects.Email to = new com.sendgrid.helpers.mail.objects.Email(email);
+            com.sendgrid.helpers.mail.objects.Content content = new com.sendgrid.helpers.mail.objects.Content("text/html", text);
+            com.sendgrid.helpers.mail.Mail mail = new com.sendgrid.helpers.mail.Mail(from, subject, to, content);
 
-            helper.setTo(email);
-            helper.setFrom("lms@pucsl.gov.lk");
-            helper.setSubject(subject);
-            helper.setText(text, true);
-
-            javaMailSender.send(mimeMessage);
+            com.sendgrid.SendGrid sg = new com.sendgrid.SendGrid(sendGridApiKey);
+            com.sendgrid.Request request = new com.sendgrid.Request();
+            request.setMethod(com.sendgrid.Method.POST);
+            request.setEndpoint("mail/send");
+            request.setBody(mail.build());
+            
+            com.sendgrid.Response response = sg.api(request);
+            logger.info("Email sent via SendGrid with status code: {}", response.getStatusCode());
         } catch (Exception e) {
             throw EmailException.sendingFailed(e.getMessage());
         }
@@ -58,22 +67,26 @@ public class EmailServiceImpl implements EmailService {
             return false;
         }
         try {
-            MimeMessage mimeMessage = javaMailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
-
             String subject = "Your OTP Code";
             String text = "<p>Hello,</p>"
                     + "<p>Your OTP code is: <b>" + otp + "</b></p>"
                     + "<p>This OTP is valid for a short period. Please do not share it with anyone.</p>"
                     + "<p>Regards,<br>Support Team</p>";
 
-            helper.setTo(email);
-            helper.setFrom("lms@pucsl.gov.lk");
-            helper.setSubject(subject);
-            helper.setText(text, true); // `true` enables HTML content
+            com.sendgrid.helpers.mail.objects.Email from = new com.sendgrid.helpers.mail.objects.Email(fromEmailAddress);
+            com.sendgrid.helpers.mail.objects.Email to = new com.sendgrid.helpers.mail.objects.Email(email);
+            com.sendgrid.helpers.mail.objects.Content content = new com.sendgrid.helpers.mail.objects.Content("text/html", text);
+            com.sendgrid.helpers.mail.Mail mail = new com.sendgrid.helpers.mail.Mail(from, subject, to, content);
 
-            javaMailSender.send(mimeMessage);
-            logger.info("OTP email sent successfully");
+            com.sendgrid.SendGrid sg = new com.sendgrid.SendGrid(sendGridApiKey);
+            com.sendgrid.Request request = new com.sendgrid.Request();
+            request.setMethod(com.sendgrid.Method.POST);
+            request.setEndpoint("mail/send");
+            request.setBody(mail.build());
+            
+            com.sendgrid.Response response = sg.api(request);
+            
+            logger.info("OTP email sent via SendGrid with status code: {}", response.getStatusCode());
             logger.debug("OTP sent to: {}", maskEmail(email));
             return true;
         } catch (Exception e) {
