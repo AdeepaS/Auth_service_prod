@@ -290,7 +290,7 @@ public class UserServiceImpl implements UserService {
     public ApiResponseDto<List<UserResponseDTO>> getPendingTechnicians() {
         logger.info("Starting to fetch pending technicians");
         try {
-            List<UserEntity> pendingUsers = userRepository.findByAccountStatus(com.auth.service.entity.AccountStatus.UNVERIFIED);
+            List<UserEntity> pendingUsers = userRepository.findByAccountStatus(com.auth.service.entity.AccountStatus.PENDING_APPROVAL);
             List<UserResponseDTO> responseDTOs = pendingUsers.stream()
                     .filter(user -> user.getRole() == com.auth.service.entity.Role.ENGINEER || user.getRole() == com.auth.service.entity.Role.STAFF || user.getRole() == com.auth.service.entity.Role.TECHNICIAN)
                     .map(this::mapUserToResponseDTO)
