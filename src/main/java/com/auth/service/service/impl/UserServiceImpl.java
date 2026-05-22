@@ -441,9 +441,8 @@ public class UserServiceImpl implements UserService {
         responseDTO.setEmail(user.getEmail());
         responseDTO.setMobileNumber(user.getMobileNumber());
         responseDTO.setIsActive(user.getIsActive());
-
-
-
+        responseDTO.setName(user.getName());
+        responseDTO.setRole(user.getRole() != null ? user.getRole().name() : null);
         logger.debug("Mapping user entity to response DTO. User ID: {}", user.getId());
         return responseDTO;
     }
