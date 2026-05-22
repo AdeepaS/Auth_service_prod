@@ -24,5 +24,5 @@ public interface UserRepo extends JpaRepository<UserEntity, UUID> {
     
     Optional<UserEntity> findBySetupToken(String setupToken);
 
-
+    java.util.List<UserEntity> findByAccountStatus(com.auth.service.entity.AccountStatus accountStatus);
 }
