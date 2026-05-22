@@ -56,7 +56,6 @@ tmp/
 .env
 
 ### Security ###
-*.pem
 *.key
 *.keystore
 *.p12
