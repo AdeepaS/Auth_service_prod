@@ -27,34 +27,31 @@ public class LogoutHandlerServiceImpl implements LogoutHandlerService {
     public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
         logger.info("Log out starting");
         try {
-            // Get the Authorization header from the request
+            // Get the refreshToken header from the request
             String RefreshTokenHeader = request.getHeader("refreshToken");
-            logger.info("Refresh token header received");
+            logger.info("Refresh token header received: {}", RefreshTokenHeader != null);
 
-            // Validate the Authorization header
-            if (RefreshTokenHeader == null || !RefreshTokenHeader.startsWith("Bearer ")) {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid or missing Authorization header");
+            if (RefreshTokenHeader != null && RefreshTokenHeader.startsWith("Bearer ")) {
+                // Extract the refresh token from the Authorization header
+                final String refreshToken = RefreshTokenHeader.substring(7);
+                logger.debug("Refresh token extracted from header. Token: {}", maskToken(refreshToken));
+
+                if (!refreshToken.isEmpty()) {
+                    // Revoke the refresh token from the repository
+                    refreshTokenRepo.findByRefreshToken(refreshToken)
+                            .map(token -> {
+                                token.setRevoked(true);  // Mark the token as revoked
+                                refreshTokenRepo.save(token);  // Save the updated token
+                                logger.info("Refresh token revoked successfully");
+                                logger.debug("Revoked token: {}", maskToken(refreshToken));
+                                return token;
+                            })
+                            .orElseThrow(() -> new ResponseStatusException(
+                                    HttpStatus.NOT_FOUND, "Refresh token not found in the database"));
+                }
+            } else {
+                logger.info("No refresh token header provided (mobile or token-based client). Skipping refresh token revocation.");
             }
-
-            // Extract the refresh token from the Authorization header
-            final String refreshToken = RefreshTokenHeader.substring(7);
-            logger.debug("Refresh token extracted from header. Token: {}", maskToken(refreshToken));
-
-            if (refreshToken.isEmpty()) {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Refresh token is empty");
-            }
-
-            // Revoke the refresh token from the repository
-            var storedRefreshToken = refreshTokenRepo.findByRefreshToken(refreshToken)
-                    .map(token -> {
-                        token.setRevoked(true);  // Mark the token as revoked
-                        refreshTokenRepo.save(token);  // Save the updated token
-                        logger.info("Refresh token revoked successfully");
-                        logger.debug("Revoked token: {}", maskToken(refreshToken));
-                        return token;
-                        })
-                        .orElseThrow(() -> new ResponseStatusException(
-                            HttpStatus.NOT_FOUND, "Refresh token not found in the database"));
 
             // Also mark the corresponding session as LOGOUT if possible using the
             // CustomAuthenticationDetails populated by JwtAccessTokenFilter.

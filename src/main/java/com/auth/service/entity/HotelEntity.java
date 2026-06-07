@@ -17,6 +17,15 @@ public class HotelEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    // Additional fields can be added here if needed by the main service
+
+    @Column(nullable = false)
+    private String name;
+
+    private String country;
+
+    private String city;
+
+    private java.math.BigDecimal latitude;
+
+    private java.math.BigDecimal longitude;
 }

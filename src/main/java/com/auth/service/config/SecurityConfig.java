@@ -135,7 +135,7 @@ public class SecurityConfig extends SecurityConfigurerAdapter<DefaultSecurityFil
                     });
                 })
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/Authservice/auth/sign-in", "/Authservice/auth/login", "/Authservice/auth/register", "/Authservice/auth/sign-up").permitAll()
+                        .requestMatchers("/Authservice/auth/sign-in", "/Authservice/auth/login", "/Authservice/auth/register", "/Authservice/auth/sign-up", "/Authservice/auth/hotels").permitAll()
                         .requestMatchers("/Authservice/auth/verify-otp-login", "/Authservice/auth/verify-otp", "/Authservice/auth/resend-otp").permitAll()
                         .requestMatchers("/Authservice/auth/refresh-token").permitAll()
                         .requestMatchers("/Authservice/auth/forgot-password", "/Authservice/auth/reset-forgotten-password", "/Authservice/auth/setup-password").permitAll()

@@ -18,5 +18,6 @@ public class UserResponseDTO {
     private String role;
     private boolean isVerified;
     private Boolean isActive;
+    private UUID hotelId;
     // Password is intentionally excluded from response
 }

@@ -458,11 +458,16 @@ public class UserServiceImpl implements UserService {
     private UserResponseDTO mapUserToResponseDTO(UserEntity user) {
         UserResponseDTO responseDTO = new UserResponseDTO();
         responseDTO.setId(user.getId());
+        responseDTO.setName(user.getName());
         responseDTO.setEmail(user.getEmail());
         responseDTO.setMobileNumber(user.getMobileNumber());
         responseDTO.setIsActive(user.getIsActive());
-        responseDTO.setName(user.getName());
         responseDTO.setRole(user.getRole() != null ? user.getRole().name() : null);
+        responseDTO.setVerified(user.getAccountStatus() == com.auth.service.entity.AccountStatus.ACTIVE);
+        if (user.getHotel() != null) {
+            responseDTO.setHotelId(user.getHotel().getId());
+        }
+
         logger.debug("Mapping user entity to response DTO. User ID: {}", user.getId());
         return responseDTO;
     }
@@ -564,7 +569,13 @@ public class UserServiceImpl implements UserService {
             // Validate hierarchy
             boolean allowed = false;
             if (creatorRole == com.auth.service.entity.Role.SUPER_ADMIN && targetRole == com.auth.service.entity.Role.ADMIN) allowed = true;
-            if (creatorRole == com.auth.service.entity.Role.ADMIN && targetRole == com.auth.service.entity.Role.MANAGER) allowed = true;
+            if (creatorRole == com.auth.service.entity.Role.ADMIN && 
+               (targetRole == com.auth.service.entity.Role.MANAGER || targetRole == com.auth.service.entity.Role.ADMIN)) {
+                if (creator.getHotel() == null || createDto.getHotelId() == null || !creator.getHotel().getId().equals(createDto.getHotelId())) {
+                    return new ApiResponseDto<>(false, HttpStatus.FORBIDDEN.value(), "Admin can only add users to their own hotel", null);
+                }
+                allowed = true;
+            }
             if (creatorRole == com.auth.service.entity.Role.MANAGER && (targetRole == com.auth.service.entity.Role.ENGINEER || targetRole == com.auth.service.entity.Role.STAFF)) allowed = true;
 
             if (!allowed) {

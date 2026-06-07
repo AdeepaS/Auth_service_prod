@@ -46,6 +46,9 @@ public class AuthController {
     @Autowired
     private LoginAttemptServiceImpl loginAttemptServiceImpl;
 
+    @Autowired
+    private com.auth.service.repository.HotelRepo hotelRepo;
+
     @Value("${main.service.url:http://localhost:8081}")
     private String mainServiceUrl;
 
@@ -82,6 +85,19 @@ public class AuthController {
     }
 
     // ==================== ACTIVE ENDPOINTS ====================
+
+    @GetMapping("/auth/hotels")
+    public ResponseEntity<ApiResponseDto<Object>> getHotelsForRegistration() {
+        logger.info("[AuthController:getHotelsForRegistration] Fetching hotels list for signup");
+        try {
+            List<com.auth.service.entity.HotelEntity> hotels = hotelRepo.findAll();
+            return ResponseEntity.ok(new ApiResponseDto<>(true, HttpStatus.OK.value(), "Hotels retrieved successfully", hotels));
+        } catch (Exception e) {
+            logger.error("[AuthController:getHotelsForRegistration] Error fetching hotels: {}", e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponseDto<>(false, HttpStatus.INTERNAL_SERVER_ERROR.value(), "Failed to fetch hotels list", null));
+        }
+    }
 
     @PostMapping({"/auth/sign-in", "/auth/login"})
     public ResponseEntity<ApiResponseDto<Object>> authenticateUser(
