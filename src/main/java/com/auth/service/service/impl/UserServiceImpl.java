@@ -393,9 +393,11 @@ public class UserServiceImpl implements UserService {
 
 
             // Update password
-
-
-
+            if (!passwordEncoder.matches(passwordResetDto.currentPassword(), user.getPasswordHash())) {
+                return new ApiResponseDto<>(false, HttpStatus.BAD_REQUEST.value(),
+                        "Incorrect current password", null);
+            }
+            user.setPasswordHash(passwordEncoder.encode(passwordResetDto.newPassword()));
 
             userInfoRepo.save(user);
 
